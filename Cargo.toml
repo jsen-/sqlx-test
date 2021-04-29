@@ -1,0 +1,8 @@
+[package]
+name = "pala"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+sqlx = { version = "0.5", features = ["runtime-tokio-rustls", "postgres", "chrono", "uuid"] }
+tokio = { version = "1.5.0", features = ["macros", "rt-multi-thread"] }
